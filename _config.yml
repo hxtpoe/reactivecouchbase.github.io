@@ -1,0 +1,5 @@
+name: ReactiveCouchbase
+markdown: redcarpet
+pygments: true
+description: "A reactive Scala driver for Couchbase"
+url: http://reactivecouchbase.org/
