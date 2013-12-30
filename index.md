@@ -6,7 +6,7 @@ title: ReactiveCouchbase
 About Reactive Couchbase  
 ==========================
 
-more soon ...
+ReactiveCouchbase is a scala driver that provides non-blocking and asynchronous I/O operations on top of <a href="http://www.couchbase.com">Couchbase</a>. ReactiveCouchbase is designed to avoid blocking on each database operations. Every operation returns immediately, using the elegant <a href="http://www.scala-lang.org/api/current/#scala.concurrent.Future">Scala Future API</a> to resume execution when it's over. With this driver, accessing the database is not an issue for performance anymore. ReactiveCouchbase is also highly focused on streaming data in and out from your Couchbase servers using the very nice <a href="http://www.playframework.com/documentation/2.2.x/Iteratees">Play framework Iteratee API</a>.
 
 Step By Step Example
 =======================
