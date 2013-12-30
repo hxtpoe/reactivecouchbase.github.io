@@ -75,9 +75,8 @@ couchbase {
 You can also provide your own ActorSystem, Logging system and configuration programmatically to the driver when you create it.
                  
 ### Run a simple query 
-
                  
-Assuming your default bucket is filled with the beer sample data, let's print all the beers
+Assuming your default bucket is filled with the beer sample data, let's print all the beers 
 
 ```scala
 // first import the implicit execution context  
@@ -99,10 +98,11 @@ object Application extends App {
 
   // search all docs from the view 'brewery_beers'   
   // then enumerate it and print each document on the fly  
+  // streaming style
   bucket.searchValues[JsObject]("beers", "brewery_beers")
       (new Query().setIncludeDocs(true))
         .enumerated.apply(Iteratee.foreach { doc =>
-    println(s"found beer : ${Json.prettyPrint(doc)}")
+    println(s"One more beer for the road  : ${Json.prettyPrint(doc)}")
   })
 
   // search the whole list of docs from the view 'brewery_beers'   
@@ -112,7 +112,7 @@ object Application extends App {
   // when the query is done, run over all the docs and print them  
   futureList.map { list =>
     list.foreach { doc =>
-      println(s"found beer : ${Json.prettyPrint(doc)}")
+      println(s"One more beer for the road : ${Json.prettyPrint(doc)}")
     }
   }
   // shutdown the driver  
