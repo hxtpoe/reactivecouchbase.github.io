@@ -1,51 +1,189 @@
+<!DOCTYPE html>
 <html>
+
     <head>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="description" content="ReactiveCouchbase is a Reactive Scala driver for Couchbase" />
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
         <title>Reactive Couchbase</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <style>
-            body {
-                background-color: rgb(238, 238, 239);
+            .couchbasebody {
                 padding-top: 18%;
             }
-            .title {
-                width: 100%;
-                height: 100%;
-                display: block;
-                top: 0px;
-                left: 0px;
-                text-align: center;
+            .couchbasetitle {
                 color: rgb(190, 34, 40);
                 cursor: default;
                 direction: ltr;
                 font-family: ff-kievit-web, 'MS UI Gothic', 'MS PGothic', Osaka, Batang, 宋体, SimSun, 微软雅黑, 'Microsoft YaHei', Georgia, 'Times New Roman', Times, sans-serif;
-                font-size: 38px;
-                font-style: normal;
-                font-weight: 600;
             }
-            .title a {
-                font-size: 18px; 
-                color: #666666;
-                text-decoration: none;
+            #header_wrap {
+                background-color: rgb(190, 34, 40);
             }
-            .more {
-                font-size: 18px; 
-                color: #000000;
+            #footer_wrap {
+                background-color: rgb(190, 34, 40);
             }
-            .subtitle {
-                font-size: 35px;
-                font-family: Verdana;
-                font-weight: 300;
-                color: #7F6945;
+            body {
+                background-color: rgb(190, 34, 40);
             }
+            .gist {
+                margin-top: 20px;
+            }
+            .gist table {
+                margin-bottom: 0px;
+                font-size: 12px;
+                border-bottom-color: red;
+            }
+            .gist .line-pre {
+                box-shadow: 0 0 0 0;
+                -moz-box-shadow: 0 0 0 0;
+                -webkit-box-shadow: 0 0 0 0;
+                -o-box-shadow: 0 0 0 0;
+                -ms-box-shadow: 0 0 0 0;
+            }
+            .gist .gist-meta {
+                display: none;
+            }
+
         </style>
     </head>
     <body>
-        <a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="http://www.reactivemanifesto.org/images/ribbons/we-are-reactive-red-right.png"> </a>
-        <div class="title">
-            Reactive Couchbase<br/><br/>
-            <a href="https://github.com/ReactiveCouchbase">ReactiveCouchbase on github</a>
-            <br/><br/>
-            <div class="more">More soon ...<div>
+
+        <a href="http://www.reactivemanifesto.org/">
+            <img style="border: 0; position: fixed; right:0; top:0; z-index: 9000;margin-top:0px;padding-top:0px;padding-right:0px;box-shadow: 0 0 0 0;-moz-box-shadow: 0 0 0 0;-webkit-box-shadow: 0 0 0 0;-o-box-shadow: 0 0 0 0;-ms-box-shadow: 0 0 0 0;" src="http://www.reactivemanifesto.org/images/ribbons/we-are-reactive-black-right.png">
+        </a>
+
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+              <a id="forkme_banner" href="https://github.com/ReactiveCouchbase">View on GitHub</a>
+
+              <h1 id="project_title">Reactive Couchbase</h1>
+              <h3 id="project_tagline">A reactive Scala driver for Couchbase</h3>
+
+              <section id="downloads">
+                <a class="zip_download_link" href="https://github.com/ReactiveCouchbase/repository/raw/master/starterkits/reactivecouchbase-starter-kit.zip" title="Download the starter kit as a .zip file">Download the starter kit as a .zip file</a>
+              </section>
+            </header>
+        </div>
+
+
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
+                <h1>About Reactive Couchbase</h1>
+                <p>
+                    more soon ...
+                </p>
+                <h1>Step By Step Example</h1>
+                <p>
+                    Let's show a simple use case: print the documents of a bucket.
+                </p>
+                <h3>Prerequisites</h3>
+                <p>
+                    We assume that you got a running Couchbase instance. If not, get the latest Couchbase binaries and install it (<a href="http://www.couchbase.com/download">http://www.couchbase.com/download</a>)
+                </p>
+                <h3>Set up your project dependencies</h3>
+                </p>
+                    ReactiveMongo is available on a private Maven repository. If you use SBT, you just have to edit build.sbt and add the following
+<pre><code>resolvers += "ReactiveCouchbase Snapshots" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots/"
+ 
+libraryDependencies ++= Seq(
+  "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.1-SNAPSHOT"
+)</code></pre>
+                </p>
+                <h3>Connect to the default bucket</h3>
+                <p>
+                    You can get a connection to the default bucket like this
+<pre><code><span style="color: red">// first import the implicit execution context  </span>
+<b>import </b>scala.concurrent.ExecutionContext.Implicits.global
+<b>import </b>org.reactivecouchbase.ReactiveCouchbaseDriver
+ 
+object <b>Application</b> extends <b>App</b> {
+ 
+  <span style="color: red">// get a driver instance driver  </span>  
+  <b>val </b>driver = ReactiveCouchbaseDriver()
+  <span style="color: red">// get the default bucket  </span>
+  <b>val </b>bucket = driver.bucket("default")
+ 
+  <span style="color: red">// do something here with the default bucket  </span>
+
+  <span style="color: red">// shutdown the driver  </span>
+  driver.shutdown()
+}</code></pre>
+                    You'll need a application.conf file in the project resources 
+<pre><code>couchbase {
+  buckets = [{
+    host="127.0.0.1"
+    port="8091"
+    base="pools"
+    bucket="default"
+    user=""
+    pass=""
+    timeout="0"
+  }]
+}</code></pre>
+                <p>
+                </p>
+                    You can also provide your own ActorSystem, Logging system and configuration programmatically to the driver when you create it.
+                </p>
+                <h3>Run a simple query</h3>
+                <p>
+                   Assuming your default bucket is filled with the beer sample data, let's print all the beers
+<pre><code><span style="color: red">// first import the implicit execution context  </span>
+<b>import </b>scala.concurrent.ExecutionContext.Implicits.global
+<b>import </b>org.reactivecouchbase.ReactiveCouchbaseDriver
+<span style="color: red">// import the implicit JsObject reader  </span>
+<b>import </b>org.reactivecouchbase.CouchbaseRWImplicits.documentAsJsObjectReader
+<b>import </b>com.couchbase.client.protocol.views.Query
+<b>import </b>play.api.libs.iteratee.Iteratee
+<b>import </b>scala.concurrent.Future
+<b>import </b>play.api.libs.json._
+
+object <b>Application</b> extends <b>App</b> {
+
+  <span style="color: red">// get a driver instance driver  </span>
+  <b>val </b>driver = ReactiveCouchbaseDriver()
+  <span style="color: red">// get the default bucket  </span>
+  <b>val </b>bucket = driver.bucket("default")
+
+  <span style="color: red">// search all docs from the view 'brewery_beers'   </span>
+  <span style="color: red">then enumerate it and print each document on the fly  </span>
+  bucket.searchValues[JsObject]("beers", "brewery_beers")
+      (new Query().setIncludeDocs(true))
+        .enumerated.apply(Iteratee.foreach { doc =>
+    println(s"found beer : ${Json.prettyPrint(doc)}")
+  })
+
+  <span style="color: red">// search the whole list of docs from the view 'brewery_beers'   </span>
+  <b>val </b>futureList: Future[List[JsObject]] = 
+    bucket.searchValues[JsObject]("beers", "brewery_beers")
+      (new Query().setIncludeDocs(true)).toList
+  <span style="color: red">// when the query is done, run over all the docs and print them  </span>
+  futureList.map { list =>
+    list.foreach { doc =>
+      println(s"found beer : ${Json.prettyPrint(doc)}")
+    }
+  }
+  <span style="color: red">// shutdown the driver  </span>
+  driver.shutdown()
+}</code></pre>
+                </p>
+                <h1>Samples</h1>
+                <p>
+                    You can find some application samples on <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/tree/master/samples">ReactiveCouchbase's github</a>
+                </p>
+                <h1>Play 2 plugin</h1>
+                <p>
+                    You can absolutely use ReactiveCouchbase from a Play 2 application. For more information about it, go to the <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play">ReactiveCouchbase-play's github project</a>
+                </p>
+
+            </section>
+        </div>
+
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+                <p class="copyright">© 2013 – 2014, Mathieu Ancelin & <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-core/graphs/contributors">contributors</a></p>
+            </footer>
         </div>
     </body>
 </html>
