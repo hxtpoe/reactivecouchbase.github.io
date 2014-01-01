@@ -183,6 +183,7 @@ object Application extends App {
   // shutdown the driver  
   driver.shutdown()
 }
+``` 
 
 ### Run a simple query 
                  
@@ -252,19 +253,25 @@ ReactiveCouchbase is composed of 3 components
 
 The core of ReactiveCouchbase. Depends on Play Iteratees library, Play JSON library and Akka
 
+<a href="doc/reactivecouchbase-core">ScalaDoc</a>
+
 ### ReactiveCouchbase Event Store
 
 A simple Event Store for eventsourcing application using Couchbase as event log
 
+<a href="doc/reactivecouchbase-es">ScalaDoc</a>
+
 ### ReactiveCouchbase Play 2 plugin
 
 You can absolutely use ReactiveCouchbase from a Play 2 application. For more information about it, go to the <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play">ReactiveCouchbase-play's github project</a>
+
+<a href="doc/reactivecouchbase-play">ScalaDoc</a>
 
 Community
 ======================
 
 * ReactiveCouchbase on <a href="https://github.com/ReactiveCouchbase">GitHub</a>
 * Tickets are on <a href="https://github.com/ReactiveCouchbase">GitHub</a>. Feel free to report any bug you find. Don’t hesitate to make pull requests.
-* ReactiveCouchbase on <a>Google Groups</a>
+* ReactiveCouchbase on <a href="https://groups.google.com/forum/?hl=fr#!forum/reactivecouchbase">Google Groups</a>
 
                 
