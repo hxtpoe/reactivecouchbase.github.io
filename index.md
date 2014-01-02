@@ -106,7 +106,8 @@ object Application extends App {
       "city" -> "London"
     )
   )
-
+  
+  // persist the JSON doc with the key 'john-doe', using implicit 'jsObjectToDocumentWriter' for serialization
   bucket.set("john-doe", document).onSuccess {
     case status => println(s"Operation status : ${status.getMessage}")
   }
@@ -143,6 +144,7 @@ object Application extends App {
   // creates a JSON document
   val document = Person("John", "Doe", 42, Address("221b", "Baker Street", "London"))
 
+  // persist the Person instance with the key 'john-doe', using implicit 'personFmt' for serialization
   bucket.set("john-doe", document).onSuccess {
     case status => println(s"Operation status : ${status.getMessage}")
   }
@@ -176,6 +178,7 @@ object Application extends App {
   implicit val addressFmt = Json.format[Address]
   implicit val personFmt = Json.format[Person]
 
+  // get the Person instance with the key 'john-doe', using implicit 'personFmt' for deserialization
   bucket.get("john-doe").map { opt =>
     println(opt.map(person => s"Found John : ${person}").getOrElse("Cannot find object with key 'john-doe'"))
   }
@@ -271,7 +274,7 @@ Community
 ======================
 
 * ReactiveCouchbase on <a href="https://github.com/ReactiveCouchbase">GitHub</a>
-* Tickets are on <a href="https://github.com/ReactiveCouchbase">GitHub</a>. Feel free to report any bug you find. Don’t hesitate to make pull requests.
+* Tickets are on <a href="https://github.com/ReactiveCouchbase">GitHub</a>. Feel free to report any bug you find or to make pull requests.
 * ReactiveCouchbase on <a href="https://groups.google.com/forum/?hl=fr#!forum/reactivecouchbase">Google Groups</a>
 
                 
