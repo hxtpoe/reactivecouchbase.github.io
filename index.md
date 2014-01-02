@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-or if you are adventurous, you can use snapshots
+or if you feel adventurous, you can use snapshots
 
 ```scala
 resolvers += "ReactiveCouchbase Snapshots" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots/"
