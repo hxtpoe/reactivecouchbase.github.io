@@ -247,10 +247,10 @@ You can also find starter kits to quickly bootstrap projects
 * <a href="https://github.com/ReactiveCouchbase/play-scala-starter-kit">Play Scala starter kit</a>
 * <a href="https://github.com/ReactiveCouchbase/play-scrud-starter-kit">Pure Scala CRUD starter kit</a>
 
-Components
+Projects
 ======================
 
-ReactiveCouchbase is composed of 3 components
+ReactiveCouchbase is composed of 3 Projects
 
 ### ReactiveCouchbase Core
 
