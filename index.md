@@ -238,7 +238,7 @@ object Application extends App {
 Samples
 ======================
 
-You can find some application samples on <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/tree/master/samples">ReactiveCouchbase's github</a>
+You can find some application samples on <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/tree/master/samples">ReactiveCouchbase's GitHub</a>
 
 You can also find starter kits to quickly bootstrap projects
 
@@ -266,7 +266,7 @@ A simple Event Store for eventsourcing application using Couchbase as event log
 
 ### ReactiveCouchbase Play 2 plugin
 
-You can absolutely use ReactiveCouchbase from a Play 2 application. For more information about it, go to the <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/blob/master/README.md">ReactiveCouchbase-play's github project</a>
+You can absolutely use ReactiveCouchbase from a Play 2 application. For more information about it, go to the <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/blob/master/README.md">ReactiveCouchbase-play's GitHub project</a>
 
 <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play">GitHub</a>, <a href="doc/reactivecouchbase-play">ScalaDoc</a>
 
