@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>experimental - org.reactivecouchbase.experimental</title>
+          <meta name="description" content="experimental - org.reactivecouchbase.experimental" />
+          <meta name="keywords" content="experimental org.reactivecouchbase.experimental" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.reactivecouchbase.experimental.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.reactivecouchbase">reactivecouchbase</a></p>
+        <h1>experimental</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">experimental</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.reactivecouchbase.experimental.Meta" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MetaextendsProductwithSerializable"></a>
+      <a id="Meta:Meta"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Meta.html"><span class="name">Meta</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rev">rev: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="expiration">expiration: <span class="extype" name="scala.Long">Long</span></span>, <span name="flags">flags: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Metadata for each retrieved document
+</p>
+    </li><li name="org.reactivecouchbase.experimental.TypedViewRow" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TypedViewRow[T]extendsProductwithSerializable"></a>
+      <a id="TypedViewRow[T]:TypedViewRow[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TypedViewRow.html"><span class="name">TypedViewRow</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="document">document: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>, <span name="id">id: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="meta">meta: <a href="Meta.html" class="extype" name="org.reactivecouchbase.experimental.Meta">Meta</a></span>, <span name="reader">reader: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.experimental.TypedViewRow.T">T</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Representation of a document from a Query (with typed values)
+</p>
+    </li><li name="org.reactivecouchbase.experimental.ViewRow" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ViewRowextendsProductwithSerializable"></a>
+      <a id="ViewRow:ViewRow"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ViewRow.html"><span class="name">ViewRow</span></a><span class="params">(<span name="document">document: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>, <span name="id">id: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="meta">meta: <a href="Meta.html" class="extype" name="org.reactivecouchbase.experimental.Meta">Meta</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Representation of a document from a Query (with raw values)
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.reactivecouchbase.experimental.Views" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Views"></a>
+      <a id="Views:Views"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Views$.html"><span class="name">Views</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Custom API for Couchbase view querying
+</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+    </body>
+      </html>
