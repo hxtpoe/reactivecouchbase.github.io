@@ -39,7 +39,9 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Reactive representation of a query result
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc type of doc
+</p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -79,7 +81,7 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="org.reactivecouchbase.client.QueryEnumerator#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="org.reactivecouchbase.client.QueryEnumerator#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;init&gt;(futureEnumerator:scala.concurrent.Future[play.api.libs.iteratee.Enumerator[T]]):org.reactivecouchbase.client.QueryEnumerator[T]"></a>
       <a id="&lt;init&gt;:QueryEnumerator[T]"></a>
       <h4 class="signature">
@@ -91,7 +93,7 @@
         <span class="name">QueryEnumerator</span><span class="params">(<span name="futureEnumerator">futureEnumerator: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="org.reactivecouchbase.client.QueryEnumerator.T">T</span>]]</span>)</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">futureEnumerator</dt><dd class="cmt"><p>doc stream</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -198,7 +200,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.QueryEnumerator#enumerate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.QueryEnumerator#enumerate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="enumerate:scala.concurrent.Future[play.api.libs.iteratee.Enumerator[T]]"></a>
       <a id="enumerate:Future[Enumerator[T]]"></a>
       <h4 class="signature">
@@ -210,8 +212,9 @@
         <span class="name">enumerate</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="org.reactivecouchbase.client.QueryEnumerator.T">T</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.QueryEnumerator#enumerated" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the enumerator for query results
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.QueryEnumerator#enumerated" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="enumerated(implicitec:scala.concurrent.ExecutionContext):play.api.libs.iteratee.Enumerator[T]"></a>
       <a id="enumerated(ExecutionContext):Enumerator[T]"></a>
       <h4 class="signature">
@@ -223,7 +226,8 @@
         <span class="name">enumerated</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="org.reactivecouchbase.client.QueryEnumerator.T">T</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the query result as enumerator
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -295,7 +299,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.QueryEnumerator#headOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.QueryEnumerator#headOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="headOption(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[T]]"></a>
       <a id="headOption(ExecutionContext):Future[Option[T]]"></a>
       <h4 class="signature">
@@ -307,7 +311,8 @@
         <span class="name">headOption</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.reactivecouchbase.client.QueryEnumerator.T">T</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the optinal head
+</p></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -373,7 +378,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.QueryEnumerator#toList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.QueryEnumerator#toList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toList(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[List[T]]"></a>
       <a id="toList(ExecutionContext):Future[List[T]]"></a>
       <h4 class="signature">
@@ -385,7 +390,8 @@
         <span class="name">toList</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="org.reactivecouchbase.client.QueryEnumerator.T">T</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the query result as list
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>

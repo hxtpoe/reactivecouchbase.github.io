@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.reactivecouchbase.client.JavaApi">JavaApi</a> with <a href="Queries.html" class="extype" name="org.reactivecouchbase.client.Queries">Queries</a></dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Trait for Java API (for Play framework usage)
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="org.reactivecouchbase.client.JavaApi">JavaApi</a> with <a href="Queries.html" class="extype" name="org.reactivecouchbase.client.Queries">Queries</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
@@ -166,7 +167,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.JavaApi#asJavaInt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.JavaApi#asJavaInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asJavaInt(f:scala.concurrent.Future[Int],ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Integer]"></a>
       <a id="asJavaInt(Future[Int],ExecutionContext):Future[Integer]"></a>
       <h4 class="signature">
@@ -178,8 +179,11 @@
         <span class="name">asJavaInt</span><span class="params">(<span name="f">f: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="java.lang.Integer">Integer</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#asJavaLong" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Java int conversion
+</p><div class="fullcomment"><div class="comment cmt"><p>Java int conversion
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>future to cast</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>casted future
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#asJavaLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asJavaLong(f:scala.concurrent.Future[Long],ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Long]"></a>
       <a id="asJavaLong(Future[Long],ExecutionContext):Future[Long]"></a>
       <h4 class="signature">
@@ -191,7 +195,10 @@
         <span class="name">asJavaLong</span><span class="params">(<span name="f">f: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Long">Long</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="java.lang.Long">Long</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Java long conversion
+</p><div class="fullcomment"><div class="comment cmt"><p>Java long conversion
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>future to cast</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>casted future
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -295,7 +302,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaAdd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaAdd" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaAdd(key:String,exp:Int,value:String,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo,bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="javaAdd(String,Int,String,PersistTo,ReplicateTo,CouchbaseBucket,ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -307,8 +314,11 @@
         <span class="name">javaAdd</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exp">exp: <span class="extype" name="scala.Int">Int</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span></span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaFind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Add a document
+</p><div class="fullcomment"><div class="comment cmt"><p>Add a document
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key of the doc</p></dd><dt class="param">exp</dt><dd class="cmt"><p>expiration of the doc</p></dd><dt class="param">value</dt><dd class="cmt"><p>the document</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persistance flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>replication flag</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation status
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaFind" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaFind[T](view:com.couchbase.client.protocol.views.View,query:com.couchbase.client.protocol.views.Query,clazz:Class[T],bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[java.util.Collection[T]]"></a>
       <a id="javaFind[T](View,Query,Class[T],CouchbaseBucket,ExecutionContext):Future[Collection[T]]"></a>
       <h4 class="signature">
@@ -320,8 +330,11 @@
         <span class="name">javaFind</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="view">view: <span class="extype" name="com.couchbase.client.protocol.views.View">View</span></span>, <span name="query">query: <span class="extype" name="com.couchbase.client.protocol.views.Query">Query</span></span>, <span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaFind.T">T</span>]</span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="java.util.Collection">Collection</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaFind.T">T</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaFind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Perform a query
+</p><div class="fullcomment"><div class="comment cmt"><p>Perform a query
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the doc</p></dd><dt class="param">view</dt><dd class="cmt"><p>the view to query</p></dd><dt class="param">query</dt><dd class="cmt"><p>the actual query</p></dd><dt class="param">clazz</dt><dd class="cmt"><p>the class of the doc</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the list of docs
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaFind" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaFind[T](docName:String,viewName:String,query:com.couchbase.client.protocol.views.Query,clazz:Class[T],bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[java.util.Collection[T]]"></a>
       <a id="javaFind[T](String,String,Query,Class[T],CouchbaseBucket,ExecutionContext):Future[Collection[T]]"></a>
       <h4 class="signature">
@@ -333,8 +346,11 @@
         <span class="name">javaFind</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="docName">docName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="viewName">viewName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="query">query: <span class="extype" name="com.couchbase.client.protocol.views.Query">Query</span></span>, <span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaFind.T">T</span>]</span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="java.util.Collection">Collection</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaFind.T">T</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaFullFind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Perform a query
+</p><div class="fullcomment"><div class="comment cmt"><p>Perform a query
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">docName</dt><dd class="cmt"><p>design document name</p></dd><dt class="param">viewName</dt><dd class="cmt"><p>the name of the view</p></dd><dt class="param">query</dt><dd class="cmt"><p>the actual query</p></dd><dt class="param">clazz</dt><dd class="cmt"><p>the class of the doc</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the list of docs
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaFullFind" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaFullFind[T](view:com.couchbase.client.protocol.views.View,query:com.couchbase.client.protocol.views.Query,clazz:Class[T],bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[java.util.Collection[org.reactivecouchbase.client.Row[T]]]"></a>
       <a id="javaFullFind[T](View,Query,Class[T],CouchbaseBucket,ExecutionContext):Future[Collection[Row[T]]]"></a>
       <h4 class="signature">
@@ -346,8 +362,11 @@
         <span class="name">javaFullFind</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="view">view: <span class="extype" name="com.couchbase.client.protocol.views.View">View</span></span>, <span name="query">query: <span class="extype" name="com.couchbase.client.protocol.views.Query">Query</span></span>, <span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaFullFind.T">T</span>]</span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="java.util.Collection">Collection</span>[<a href="Row.html" class="extype" name="org.reactivecouchbase.client.Row">Row</a>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaFullFind.T">T</span>]]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaFullFind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Perform a query
+</p><div class="fullcomment"><div class="comment cmt"><p>Perform a query
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the doc</p></dd><dt class="param">view</dt><dd class="cmt"><p>the view to query</p></dd><dt class="param">query</dt><dd class="cmt"><p>the actual query</p></dd><dt class="param">clazz</dt><dd class="cmt"><p>the class of the doc</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the list of rows
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaFullFind" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaFullFind[T](docName:String,viewName:String,query:com.couchbase.client.protocol.views.Query,clazz:Class[T],bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[java.util.Collection[org.reactivecouchbase.client.Row[T]]]"></a>
       <a id="javaFullFind[T](String,String,Query,Class[T],CouchbaseBucket,ExecutionContext):Future[Collection[Row[T]]]"></a>
       <h4 class="signature">
@@ -359,8 +378,11 @@
         <span class="name">javaFullFind</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="docName">docName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="viewName">viewName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="query">query: <span class="extype" name="com.couchbase.client.protocol.views.Query">Query</span></span>, <span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaFullFind.T">T</span>]</span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="java.util.Collection">Collection</span>[<a href="Row.html" class="extype" name="org.reactivecouchbase.client.Row">Row</a>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaFullFind.T">T</span>]]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaGet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Perform a query
+</p><div class="fullcomment"><div class="comment cmt"><p>Perform a query
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the doc</p></dd><dt class="param">docName</dt><dd class="cmt"><p>design document name</p></dd><dt class="param">viewName</dt><dd class="cmt"><p>the name of the view</p></dd><dt class="param">query</dt><dd class="cmt"><p>the actual query</p></dd><dt class="param">clazz</dt><dd class="cmt"><p>the class of the doc</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the list of rows
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaGet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaGet[T](key:String,clazz:Class[T],bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[T]"></a>
       <a id="javaGet[T](String,Class[T],CouchbaseBucket,ExecutionContext):Future[T]"></a>
       <h4 class="signature">
@@ -372,8 +394,11 @@
         <span class="name">javaGet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaGet.T">T</span>]</span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaGet.T">T</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaGet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch a document
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a document
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the doc</p></dd><dt class="param">clazz</dt><dd class="cmt"><p>the class of the doc</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the document
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaGet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaGet(key:String,bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[String]"></a>
       <a id="javaGet(String,CouchbaseBucket,ExecutionContext):Future[String]"></a>
       <h4 class="signature">
@@ -385,8 +410,11 @@
         <span class="name">javaGet</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaOptGet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch a raw document
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a raw document
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key of the doc</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the raw document
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaOptGet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaOptGet[T](key:String,clazz:Class[T],bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[java.util.List[T]]"></a>
       <a id="javaOptGet[T](String,Class[T],CouchbaseBucket,ExecutionContext):Future[List[T]]"></a>
       <h4 class="signature">
@@ -398,8 +426,11 @@
         <span class="name">javaOptGet</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="clazz">clazz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaOptGet.T">T</span>]</span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="java.util.List">List</span>[<span class="extype" name="org.reactivecouchbase.client.JavaApi.javaOptGet.T">T</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaReplace" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch an optional document
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch an optional document
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>the type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the doc</p></dd><dt class="param">clazz</dt><dd class="cmt"><p>the class of the doc</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the list of docs
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaReplace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaReplace(key:String,exp:Int,value:String,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo,bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="javaReplace(String,Int,String,PersistTo,ReplicateTo,CouchbaseBucket,ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -411,8 +442,11 @@
         <span class="name">javaReplace</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exp">exp: <span class="extype" name="scala.Int">Int</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span></span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Replace a document
+</p><div class="fullcomment"><div class="comment cmt"><p>Replace a document
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key of the doc</p></dd><dt class="param">exp</dt><dd class="cmt"><p>expiration of the doc</p></dd><dt class="param">value</dt><dd class="cmt"><p>the document</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persistance flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>replication flag</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation status
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaSet(key:String,exp:Int,value:String,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo,bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="javaSet(String,Int,String,PersistTo,ReplicateTo,CouchbaseBucket,ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -424,8 +458,11 @@
         <span class="name">javaSet</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exp">exp: <span class="extype" name="scala.Int">Int</span></span>, <span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span></span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.JavaApi#javaView" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Set a document
+</p><div class="fullcomment"><div class="comment cmt"><p>Set a document
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key of the doc</p></dd><dt class="param">exp</dt><dd class="cmt"><p>expiration of the doc</p></dd><dt class="param">value</dt><dd class="cmt"><p>the document</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persistance flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>replication flag</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation status
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.JavaApi#javaView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="javaView(docName:String,viewName:String,bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext):scala.concurrent.Future[com.couchbase.client.protocol.views.View]"></a>
       <a id="javaView(String,String,CouchbaseBucket,ExecutionContext):Future[View]"></a>
       <h4 class="signature">
@@ -437,7 +474,10 @@
         <span class="name">javaView</span><span class="params">(<span name="docName">docName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="viewName">viewName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="com.couchbase.client.protocol.views.View">View</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Fetch view
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch view
+</p></div><dl class="paramcmts block"><dt class="param">docName</dt><dd class="cmt"><p>the design doc name</p></dd><dt class="param">viewName</dt><dd class="cmt"><p>the name of the view</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the view
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>

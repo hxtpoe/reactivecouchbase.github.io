@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Trait for Atomic updates
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
@@ -166,19 +167,38 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Atomic#atomicUpdate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="atomicUpdate[T](key:String,operation:T=&gt;T)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext,implicitr:play.api.libs.json.Reads[T],implicitw:play.api.libs.json.Writes[T]):scala.concurrent.Future[Any]"></a>
-      <a id="atomicUpdate[T](String,(T)⇒T)(CouchbaseBucket,ExecutionContext,Reads[T],Writes[T]):Future[Any]"></a>
+    </li><li name="org.reactivecouchbase.client.Atomic#atomicUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="atomicUpdate[T](key:String,operation:T=&gt;T)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext,implicitr:play.api.libs.json.Reads[T],implicitw:play.api.libs.json.Writes[T]):scala.concurrent.Future[T]"></a>
+      <a id="atomicUpdate[T](String,(T)⇒T)(CouchbaseBucket,ExecutionContext,Reads[T],Writes[T]):Future[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">atomicUpdate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="operation">operation: (<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span>) ⇒ <span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span>]</span>, <span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Any">Any</span>]</span>
+        <span class="name">atomicUpdate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="operation">operation: (<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span>) ⇒ <span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span>]</span>, <span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicUpdate.T">T</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Atomically perform operation(s) on a document while it's locked
+</p><div class="fullcomment"><div class="comment cmt"><p>Atomically perform operation(s) on a document while it's locked
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the document</p></dd><dt class="param">operation</dt><dd class="cmt"><p>the operation(s) to perform on the document while it's locked</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">w</dt><dd class="cmt"><p>Json writer</p></dd><dt>returns</dt><dd class="cmt"><p>the document
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Atomic#atomicallyUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="atomicallyUpdate[T](key:String)(operation:T=&gt;scala.concurrent.Future[T])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext,implicitr:play.api.libs.json.Reads[T],implicitw:play.api.libs.json.Writes[T]):scala.concurrent.Future[T]"></a>
+      <a id="atomicallyUpdate[T](String)((T)⇒Future[T])(CouchbaseBucket,ExecutionContext,Reads[T],Writes[T]):Future[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">atomicallyUpdate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="operation">operation: (<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicallyUpdate.T">T</span>) ⇒ <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicallyUpdate.T">T</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicallyUpdate.T">T</span>]</span>, <span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicallyUpdate.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.atomicallyUpdate.T">T</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Atomically perform async operation(s) on a document while it's locked
+</p><div class="fullcomment"><div class="comment cmt"><p>Atomically perform async operation(s) on a document while it's locked
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the document</p></dd><dt class="param">operation</dt><dd class="cmt"><p>the async operation(s) to perform on the document while it's locked</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">w</dt><dd class="cmt"><p>Json writer</p></dd><dt>returns</dt><dd class="cmt"><p>the document
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -243,7 +263,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Atomic#getAndLock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.Atomic#getAndLock" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getAndLock[T](key:String,exp:org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming)(implicitr:play.api.libs.json.Reads[T],implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[net.spy.memcached.CASValue[T]]]"></a>
       <a id="getAndLock[T](String,CouchbaseExpirationTiming)(Reads[T],CouchbaseBucket,ExecutionContext):Future[Option[CASValue[T]]]"></a>
       <h4 class="signature">
@@ -255,7 +275,10 @@
         <span class="name">getAndLock</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exp">exp: <a href="../CouchbaseExpiration$$CouchbaseExpirationTiming.html" class="extype" name="org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming">CouchbaseExpirationTiming</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.getAndLock.T">T</span>]</span>, <span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="net.spy.memcached.CASValue">CASValue</span>[<span class="extype" name="org.reactivecouchbase.client.Atomic.getAndLock.T">T</span>]]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Get a doc and lock it
+</p><div class="fullcomment"><div class="comment cmt"><p>Get a doc and lock it
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>key of the lock</p></dd><dt class="param">exp</dt><dd class="cmt"><p>expiration of the lock</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader for type T</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket used</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>Cas value
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -360,7 +383,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Atomic#unlock" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.Atomic#unlock" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="unlock(key:String,casId:Long)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="unlock(String,Long)(CouchbaseBucket,ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -372,7 +395,10 @@
         <span class="name">unlock</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="casId">casId: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Unlock a locked key
+</p><div class="fullcomment"><div class="comment cmt"><p>Unlock a locked key
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>key to unlock</p></dd><dt class="param">casId</dt><dd class="cmt"><p>id of the compare and swap operation</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation status
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>

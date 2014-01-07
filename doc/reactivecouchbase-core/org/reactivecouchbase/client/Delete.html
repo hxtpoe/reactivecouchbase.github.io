@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Trait for delete operations
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
@@ -185,7 +186,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Delete#delete" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.Delete#delete" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="delete(key:String,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="delete(String,PersistTo,ReplicateTo)(CouchbaseBucket,ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -197,8 +198,11 @@
         <span class="name">delete</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Delete#deleteStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Delete a document
+</p><div class="fullcomment"><div class="comment cmt"><p>Delete a document
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key to delete</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persist flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>repplication flag</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation status for the delete operation
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Delete#deleteStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteStream(data:play.api.libs.iteratee.Enumerator[String],persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[List[net.spy.memcached.ops.OperationStatus]]"></a>
       <a id="deleteStream(Enumerator[String],PersistTo,ReplicateTo)(CouchbaseBucket,ExecutionContext):Future[List[OperationStatus]]"></a>
       <h4 class="signature">
@@ -210,8 +214,11 @@
         <span class="name">deleteStream</span><span class="params">(<span name="data">data: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Delete#deleteStreamWithKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Delete a stream of documents
+</p><div class="fullcomment"><div class="comment cmt"><p>Delete a stream of documents
+</p></div><dl class="paramcmts block"><dt class="param">data</dt><dd class="cmt"><p>the stream of documents to delete</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persist flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>repplication flag</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation statuses for the delete operation
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Delete#deleteStreamWithKey" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteStreamWithKey[T](key:T=&gt;String,data:play.api.libs.iteratee.Enumerator[T],persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[List[net.spy.memcached.ops.OperationStatus]]"></a>
       <a id="deleteStreamWithKey[T]((T)⇒String,Enumerator[T],PersistTo,ReplicateTo)(CouchbaseBucket,ExecutionContext):Future[List[OperationStatus]]"></a>
       <h4 class="signature">
@@ -223,8 +230,11 @@
         <span class="name">deleteStreamWithKey</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: (<span class="extype" name="org.reactivecouchbase.client.Delete.deleteStreamWithKey.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="data">data: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="org.reactivecouchbase.client.Delete.deleteStreamWithKey.T">T</span>]</span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Delete#deleteWithId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Delete a stream of documents
+</p><div class="fullcomment"><div class="comment cmt"><p>Delete a stream of documents
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of document</p></dd><dt class="param">key</dt><dd class="cmt"><p>the extractor to get the key</p></dd><dt class="param">data</dt><dd class="cmt"><p>the stream of documents to delete</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persist flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>repplication flag</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation statuses for the delete operation
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Delete#deleteWithId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteWithId[T&lt;:AnyRef{defid:String}](value:T,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="deleteWithId[T&lt;:AnyRef{defid:String}](T,PersistTo,ReplicateTo)(CouchbaseBucket,ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -236,8 +246,11 @@
         <span class="name">deleteWithId</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span> { def id: String }</span>]</span><span class="params">(<span name="value">value: <span class="extype" name="org.reactivecouchbase.client.Delete.deleteWithId.T">T</span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Delete#deleteWithKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Delete a document with an id field of type String
+</p><div class="fullcomment"><div class="comment cmt"><p>Delete a document with an id field of type String
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of documents</p></dd><dt class="param">value</dt><dd class="cmt"></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persist flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>repplication flag</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation status for the delete operation
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Delete#deleteWithKey" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteWithKey[T](key:T=&gt;String,value:T,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="deleteWithKey[T]((T)⇒String,T,PersistTo,ReplicateTo)(CouchbaseBucket,ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -249,7 +262,10 @@
         <span class="name">deleteWithKey</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: (<span class="extype" name="org.reactivecouchbase.client.Delete.deleteWithKey.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="org.reactivecouchbase.client.Delete.deleteWithKey.T">T</span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Delete a document
+</p><div class="fullcomment"><div class="comment cmt"><p>Delete a document
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of document</p></dd><dt class="param">key</dt><dd class="cmt"><p>the extractor to get the key to delete</p></dd><dt class="param">value</dt><dd class="cmt"><p>the document</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persist flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>repplication flag</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>the operation status for the delete operation
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>

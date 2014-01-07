@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Trait for read operations
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
@@ -211,7 +212,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Read#fetch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.Read#fetch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fetch[T](keys:Seq[String])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):org.reactivecouchbase.client.QueryEnumerator[(String,T)]"></a>
       <a id="fetch[T](Seq[String])(CouchbaseBucket,Reads[T],ExecutionContext):QueryEnumerator[(String,T)]"></a>
       <h4 class="signature">
@@ -223,8 +224,11 @@
         <span class="name">fetch</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="keys">keys: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Read.fetch.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <a href="QueryEnumerator.html" class="extype" name="org.reactivecouchbase.client.QueryEnumerator">QueryEnumerator</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.reactivecouchbase.client.Read.fetch.T">T</span>)]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Read#fetch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch a stream of documents
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a stream of documents
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">keys</dt><dd class="cmt"><p>the key of the documents</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Read#fetch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fetch[T](keysEnumerator:play.api.libs.iteratee.Enumerator[String])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):org.reactivecouchbase.client.QueryEnumerator[(String,T)]"></a>
       <a id="fetch[T](Enumerator[String])(CouchbaseBucket,Reads[T],ExecutionContext):QueryEnumerator[(String,T)]"></a>
       <h4 class="signature">
@@ -236,8 +240,11 @@
         <span class="name">fetch</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="keysEnumerator">keysEnumerator: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Read.fetch.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <a href="QueryEnumerator.html" class="extype" name="org.reactivecouchbase.client.QueryEnumerator">QueryEnumerator</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.reactivecouchbase.client.Read.fetch.T">T</span>)]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Read#fetchValues" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch a stream of documents
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a stream of documents
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">keysEnumerator</dt><dd class="cmt"><p>stream of keys</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Read#fetchValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fetchValues[T](keys:Seq[String])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):org.reactivecouchbase.client.QueryEnumerator[T]"></a>
       <a id="fetchValues[T](Seq[String])(CouchbaseBucket,Reads[T],ExecutionContext):QueryEnumerator[T]"></a>
       <h4 class="signature">
@@ -249,8 +256,11 @@
         <span class="name">fetchValues</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="keys">keys: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Read.fetchValues.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <a href="QueryEnumerator.html" class="extype" name="org.reactivecouchbase.client.QueryEnumerator">QueryEnumerator</a>[<span class="extype" name="org.reactivecouchbase.client.Read.fetchValues.T">T</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Read#fetchValues" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch a stream of documents
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a stream of documents
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">keys</dt><dd class="cmt"><p>the key of the documents</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Read#fetchValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fetchValues[T](keysEnumerator:play.api.libs.iteratee.Enumerator[String])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):org.reactivecouchbase.client.QueryEnumerator[T]"></a>
       <a id="fetchValues[T](Enumerator[String])(CouchbaseBucket,Reads[T],ExecutionContext):QueryEnumerator[T]"></a>
       <h4 class="signature">
@@ -262,8 +272,11 @@
         <span class="name">fetchValues</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="keysEnumerator">keysEnumerator: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Read.fetchValues.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <a href="QueryEnumerator.html" class="extype" name="org.reactivecouchbase.client.QueryEnumerator">QueryEnumerator</a>[<span class="extype" name="org.reactivecouchbase.client.Read.fetchValues.T">T</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Read#fetchWithKeys" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch a stream of documents
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a stream of documents
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">keysEnumerator</dt><dd class="cmt"><p>stream of keys</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Read#fetchWithKeys" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fetchWithKeys[T](keys:play.api.libs.iteratee.Enumerator[String])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Map[String,T]]"></a>
       <a id="fetchWithKeys[T](Enumerator[String])(CouchbaseBucket,Reads[T],ExecutionContext):Future[Map[String,T]]"></a>
       <h4 class="signature">
@@ -275,8 +288,11 @@
         <span class="name">fetchWithKeys</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="keys">keys: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Read.fetchWithKeys.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.reactivecouchbase.client.Read.fetchWithKeys.T">T</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Read#fetchWithKeys" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch a stream document and their key
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a stream document and their key
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">keys</dt><dd class="cmt"><p>the keys of the documents</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Read#fetchWithKeys" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fetchWithKeys[T](keys:Seq[String])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Map[String,T]]"></a>
       <a id="fetchWithKeys[T](Seq[String])(CouchbaseBucket,Reads[T],ExecutionContext):Future[Map[String,T]]"></a>
       <h4 class="signature">
@@ -288,7 +304,10 @@
         <span class="name">fetchWithKeys</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="keys">keys: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Read.fetchWithKeys.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.reactivecouchbase.client.Read.fetchWithKeys.T">T</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Fetch a stream document and their key
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a stream document and their key
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">keys</dt><dd class="cmt"><p>the keys of the documents</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -308,7 +327,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Read#get" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.Read#get" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="get[T](key:String)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[T]]"></a>
       <a id="get[T](String)(CouchbaseBucket,Reads[T],ExecutionContext):Future[Option[T]]"></a>
       <h4 class="signature">
@@ -320,8 +339,11 @@
         <span class="name">get</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Read.get.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.reactivecouchbase.client.Read.get.T">T</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.Read#get" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Fetch a optional document
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a optional document
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the document</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.Read#get" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="get[T](key:String,tc:net.spy.memcached.transcoders.Transcoder[T])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[T]]"></a>
       <a id="get[T](String,Transcoder[T])(CouchbaseBucket,ExecutionContext):Future[Option[T]]"></a>
       <h4 class="signature">
@@ -333,7 +355,10 @@
         <span class="name">get</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tc">tc: <span class="extype" name="net.spy.memcached.transcoders.Transcoder">Transcoder</span>[<span class="extype" name="org.reactivecouchbase.client.Read.get.T">T</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.reactivecouchbase.client.Read.get.T">T</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">fetch a document
+</p><div class="fullcomment"><div class="comment cmt"><p>fetch a document
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the document</p></dd><dt class="param">tc</dt><dd class="cmt"><p>the transcodeuse</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -347,7 +372,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Read#getWithKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.Read#getWithKey" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getWithKey[T](key:String)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[(String,T)]]"></a>
       <a id="getWithKey[T](String)(CouchbaseBucket,Reads[T],ExecutionContext):Future[Option[(String,T)]]"></a>
       <h4 class="signature">
@@ -359,7 +384,10 @@
         <span class="name">getWithKey</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.Read.getWithKey.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.reactivecouchbase.client.Read.getWithKey.T">T</span>)]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Fetch a optional document and its key
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a optional document and its key
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the document</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
@@ -386,7 +414,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Read#keyStats" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.Read#keyStats" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="keyStats(key:String)(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Map[String,String]]"></a>
       <a id="keyStats(String)(CouchbaseBucket,ExecutionContext):Future[Map[String,String]]"></a>
       <h4 class="signature">
@@ -398,7 +426,10 @@
         <span class="name">keyStats</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Fetch keys stats
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch keys stats
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key of the document</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -438,7 +469,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.Read#rawFetch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.Read#rawFetch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="rawFetch(keysEnumerator:play.api.libs.iteratee.Enumerator[String])(implicitbucket:org.reactivecouchbase.CouchbaseBucket,implicitec:scala.concurrent.ExecutionContext):org.reactivecouchbase.client.QueryEnumerator[(String,String)]"></a>
       <a id="rawFetch(Enumerator[String])(CouchbaseBucket,ExecutionContext):QueryEnumerator[(String,String)]"></a>
       <h4 class="signature">
@@ -450,7 +481,10 @@
         <span class="name">rawFetch</span><span class="params">(<span name="keysEnumerator">keysEnumerator: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <a href="QueryEnumerator.html" class="extype" name="org.reactivecouchbase.client.QueryEnumerator">QueryEnumerator</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Fetch a stream of documents
+</p><div class="fullcomment"><div class="comment cmt"><p>Fetch a stream of documents
+</p></div><dl class="paramcmts block"><dt class="param">keysEnumerator</dt><dd class="cmt"><p>stream of keys</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Represent a Capped bucket (capped is handle in the driver, not on the server side)
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -79,7 +80,7 @@
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="org.reactivecouchbase.client.CappedBucket#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="org.reactivecouchbase.client.CappedBucket#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;init&gt;(bucket:org.reactivecouchbase.CouchbaseBucket,ec:scala.concurrent.ExecutionContext,max:Int,reaper:Boolean):org.reactivecouchbase.client.CappedBucket"></a>
       <a id="&lt;init&gt;:CappedBucket"></a>
       <h4 class="signature">
@@ -91,7 +92,8 @@
         <span class="name">CappedBucket</span><span class="params">(<span name="bucket">bucket: <a href="../CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>, <span name="max">max: <span class="extype" name="scala.Int">Int</span></span>, <span name="reaper">reaper: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">bucket</dt><dd class="cmt"><p>the bucket to use the bucket to use</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt class="param">max</dt><dd class="cmt"><p>max elements in the bucket</p></dd><dt class="param">reaper</dt><dd class="cmt"><p>enable reaper to remove old elements
+</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -269,7 +271,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.CappedBucket#insert" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.CappedBucket#insert" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="insert[T](key:String,value:T,exp:org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitw:play.api.libs.json.Writes[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="insert[T](String,T,CouchbaseExpirationTiming,PersistTo,ReplicateTo)(Writes[T],ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -281,8 +283,11 @@
         <span class="name">insert</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="org.reactivecouchbase.client.CappedBucket.insert.T">T</span></span>, <span name="exp">exp: <a href="../CouchbaseExpiration$$CouchbaseExpirationTiming.html" class="extype" name="org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming">CouchbaseExpirationTiming</a> = <span class="symbol"><span class="name"><a href="Constants$.html">Constants.expiration</a></span></span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.insert.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.CappedBucket#insertStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Insert document into the capped bucket
+</p><div class="fullcomment"><div class="comment cmt"><p>Insert document into the capped bucket
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the inserted doc</p></dd><dt class="param">value</dt><dd class="cmt"><p>the doc to insert</p></dd><dt class="param">exp</dt><dd class="cmt"><p>expiration of data</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persistance flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>replication flag</p></dd><dt class="param">w</dt><dd class="cmt"><p>Json writer for type T</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.CappedBucket#insertStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="insertStream[T](data:play.api.libs.iteratee.Enumerator[(String,T)],exp:org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitw:play.api.libs.json.Writes[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[List[net.spy.memcached.ops.OperationStatus]]"></a>
       <a id="insertStream[T](Enumerator[(String,T)],CouchbaseExpirationTiming,PersistTo,ReplicateTo)(Writes[T],ExecutionContext):Future[List[OperationStatus]]"></a>
       <h4 class="signature">
@@ -294,8 +299,11 @@
         <span class="name">insertStream</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="data">data: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.reactivecouchbase.client.CappedBucket.insertStream.T">T</span>)]</span>, <span name="exp">exp: <a href="../CouchbaseExpiration$$CouchbaseExpirationTiming.html" class="extype" name="org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming">CouchbaseExpirationTiming</a> = <span class="symbol"><span class="name"><a href="Constants$.html">Constants.expiration</a></span></span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.insertStream.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.CappedBucket#insertStreamWithKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Insert a stream of data into the capped bucket
+</p><div class="fullcomment"><div class="comment cmt"><p>Insert a stream of data into the capped bucket
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">data</dt><dd class="cmt"><p>stream of data</p></dd><dt class="param">exp</dt><dd class="cmt"><p>expiration of data to insert</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persistance flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>replication flag</p></dd><dt class="param">w</dt><dd class="cmt"><p>Json writer for type T</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.CappedBucket#insertStreamWithKey" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="insertStreamWithKey[T](key:T=&gt;String,data:play.api.libs.iteratee.Enumerator[T],exp:org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitw:play.api.libs.json.Writes[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[List[net.spy.memcached.ops.OperationStatus]]"></a>
       <a id="insertStreamWithKey[T]((T)⇒String,Enumerator[T],CouchbaseExpirationTiming,PersistTo,ReplicateTo)(Writes[T],ExecutionContext):Future[List[OperationStatus]]"></a>
       <h4 class="signature">
@@ -307,8 +315,11 @@
         <span class="name">insertStreamWithKey</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: (<span class="extype" name="org.reactivecouchbase.client.CappedBucket.insertStreamWithKey.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="data">data: <span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.insertStreamWithKey.T">T</span>]</span>, <span name="exp">exp: <a href="../CouchbaseExpiration$$CouchbaseExpirationTiming.html" class="extype" name="org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming">CouchbaseExpirationTiming</a> = <span class="symbol"><span class="name"><a href="Constants$.html">Constants.expiration</a></span></span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.insertStreamWithKey.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.client.CappedBucket#insertWithKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Insert a stream of data into the capped bucket
+</p><div class="fullcomment"><div class="comment cmt"><p>Insert a stream of data into the capped bucket
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key extractor</p></dd><dt class="param">data</dt><dd class="cmt"><p>stream of data to insert</p></dd><dt class="param">exp</dt><dd class="cmt"><p>expiration of data</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persistance flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>replication flag</p></dd><dt class="param">w</dt><dd class="cmt"><p>Json writer for type T</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.client.CappedBucket#insertWithKey" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="insertWithKey[T](key:T=&gt;String,value:T,exp:org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming,persistTo:net.spy.memcached.PersistTo,replicateTo:net.spy.memcached.ReplicateTo)(implicitw:play.api.libs.json.Writes[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[net.spy.memcached.ops.OperationStatus]"></a>
       <a id="insertWithKey[T]((T)⇒String,T,CouchbaseExpirationTiming,PersistTo,ReplicateTo)(Writes[T],ExecutionContext):Future[OperationStatus]"></a>
       <h4 class="signature">
@@ -320,7 +331,10 @@
         <span class="name">insertWithKey</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: (<span class="extype" name="org.reactivecouchbase.client.CappedBucket.insertWithKey.T">T</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="org.reactivecouchbase.client.CappedBucket.insertWithKey.T">T</span></span>, <span name="exp">exp: <a href="../CouchbaseExpiration$$CouchbaseExpirationTiming.html" class="extype" name="org.reactivecouchbase.CouchbaseExpiration.CouchbaseExpirationTiming">CouchbaseExpirationTiming</a> = <span class="symbol"><span class="name"><a href="Constants$.html">Constants.expiration</a></span></span></span>, <span name="persistTo">persistTo: <span class="extype" name="net.spy.memcached.PersistTo">PersistTo</span> = <span class="symbol">PersistTo.ZERO</span></span>, <span name="replicateTo">replicateTo: <span class="extype" name="net.spy.memcached.ReplicateTo">ReplicateTo</span> = <span class="symbol">ReplicateTo.ZERO</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="w">w: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.insertWithKey.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="net.spy.memcached.ops.OperationStatus">OperationStatus</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Insert a document into the capped bucket
+</p><div class="fullcomment"><div class="comment cmt"><p>Insert a document into the capped bucket
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">key</dt><dd class="cmt"><p>the key of the inserted doc</p></dd><dt class="param">value</dt><dd class="cmt"><p>the doc to insert</p></dd><dt class="param">exp</dt><dd class="cmt"><p>expiration of data</p></dd><dt class="param">persistTo</dt><dd class="cmt"><p>persistance flag</p></dd><dt class="param">replicateTo</dt><dd class="cmt"><p>replication flag</p></dd><dt class="param">w</dt><dd class="cmt"><p>Json writer for type T</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -334,19 +348,22 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.CappedBucket#lastInsertedOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="lastInsertedOption[T](key:String)(implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[T]]"></a>
-      <a id="lastInsertedOption[T](String)(Reads[T],ExecutionContext):Future[Option[T]]"></a>
+    </li><li name="org.reactivecouchbase.client.CappedBucket#lastInsertedOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastInsertedOption[T](implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[T]]"></a>
+      <a id="lastInsertedOption[T](Reads[T],ExecutionContext):Future[Option[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lastInsertedOption</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.lastInsertedOption.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.lastInsertedOption.T">T</span>]]</span>
+        <span class="name">lastInsertedOption</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.lastInsertedOption.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.lastInsertedOption.T">T</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Retrieve the last inserted document from the capped bucket
+</p><div class="fullcomment"><div class="comment cmt"><p>Retrieve the last inserted document from the capped bucket
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader for type T</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -386,19 +403,22 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.CappedBucket#oldestOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="oldestOption[T](key:String)(implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[T]]"></a>
-      <a id="oldestOption[T](String)(Reads[T],ExecutionContext):Future[Option[T]]"></a>
+    </li><li name="org.reactivecouchbase.client.CappedBucket#oldestOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="oldestOption[T](implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[Option[T]]"></a>
+      <a id="oldestOption[T](Reads[T],ExecutionContext):Future[Option[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">oldestOption</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.oldestOption.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.oldestOption.T">T</span>]]</span>
+        <span class="name">oldestOption</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.oldestOption.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.oldestOption.T">T</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Retrieve the oldest document from the capped bucket
+</p><div class="fullcomment"><div class="comment cmt"><p>Retrieve the oldest document from the capped bucket
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader for type T</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -412,7 +432,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.reactivecouchbase.client.CappedBucket#tail" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.client.CappedBucket#tail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="tail[T](from:Long,every:Long,unit:java.util.concurrent.TimeUnit)(implicitr:play.api.libs.json.Reads[T],implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[play.api.libs.iteratee.Enumerator[T]]"></a>
       <a id="tail[T](Long,Long,TimeUnit)(Reads[T],ExecutionContext):Future[Enumerator[T]]"></a>
       <h4 class="signature">
@@ -424,7 +444,10 @@
         <span class="name">tail</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="from">from: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="every">every: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">1000L</span></span>, <span name="unit">unit: <span class="extype" name="java.util.concurrent.TimeUnit">TimeUnit</span> = <span class="symbol">TimeUnit.MILLISECONDS</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="r">r: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.tail.T">T</span>]</span>, <span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="play.api.libs.iteratee.Enumerator">Enumerator</span>[<span class="extype" name="org.reactivecouchbase.client.CappedBucket.tail.T">T</span>]]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Retrieve an infinite stream of data from a capped bucket.</p><div class="fullcomment"><div class="comment cmt"><p>Retrieve an infinite stream of data from a capped bucket. Each time a document is inserted in the bucket, doc
+document is pushed in the stream.
+</p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>type of the doc</p></dd><dt class="param">from</dt><dd class="cmt"><p>natural insertion id to retrieve from</p></dd><dt class="param">every</dt><dd class="cmt"><p>retrieve new doc every</p></dd><dt class="param">unit</dt><dd class="cmt"><p>time unit</p></dd><dt class="param">r</dt><dd class="cmt"><p>Json reader for type T</p></dd><dt class="param">ec</dt><dd class="cmt"><p>ExecutionContext for async processing</p></dd><dt>returns</dt><dd class="cmt"><p>
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>

@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>API to create Future that success after a duration
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -318,7 +319,7 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.reactivecouchbase.Timeout#timeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.reactivecouchbase.Timeout#timeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeout[A](message:=&gt;A,duration:Long,unit:java.util.concurrent.TimeUnit,scheduler:akka.actor.Scheduler)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[A]"></a>
       <a id="timeout[A](⇒A,Long,TimeUnit,Scheduler)(ExecutionContext):Future[A]"></a>
       <h4 class="signature">
@@ -330,8 +331,11 @@
         <span class="name">timeout</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="message">message: ⇒ <span class="extype" name="org.reactivecouchbase.Timeout.timeout.A">A</span></span>, <span name="duration">duration: <span class="extype" name="scala.Long">Long</span></span>, <span name="unit">unit: <span class="extype" name="java.util.concurrent.TimeUnit">TimeUnit</span> = <span class="symbol">TimeUnit.MILLISECONDS</span></span>, <span name="scheduler">scheduler: <span class="extype" name="akka.actor.Scheduler">Scheduler</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="org.reactivecouchbase.Timeout.timeout.A">A</span>]</span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.Timeout#timeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Create a Future that success after a duration
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a Future that success after a duration
+</p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>Type of the message</p></dd><dt class="param">message</dt><dd class="cmt"><p>the message wrapped by the future after success</p></dd><dt class="param">duration</dt><dd class="cmt"><p>the duration after which Future is a success</p></dd><dt class="param">unit</dt><dd class="cmt"><p>the unit of duration</p></dd><dt class="param">scheduler</dt><dd class="cmt"><p>the Scheduler to manager duration</p></dd><dt class="param">ec</dt><dd class="cmt"><p>the Execution Context for Future execution</p></dd><dt>returns</dt><dd class="cmt"><p>the Future created
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.Timeout#timeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="timeout[A](message:=&gt;A,duration:scala.concurrent.duration.Duration,scheduler:akka.actor.Scheduler)(implicitec:scala.concurrent.ExecutionContext):scala.concurrent.Future[A]"></a>
       <a id="timeout[A](⇒A,Duration,Scheduler)(ExecutionContext):Future[A]"></a>
       <h4 class="signature">
@@ -343,7 +347,10 @@
         <span class="name">timeout</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="message">message: ⇒ <span class="extype" name="org.reactivecouchbase.Timeout.timeout.A">A</span></span>, <span name="duration">duration: <span class="extype" name="scala.concurrent.duration.Duration">Duration</span></span>, <span name="scheduler">scheduler: <span class="extype" name="akka.actor.Scheduler">Scheduler</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ec">ec: <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="org.reactivecouchbase.Timeout.timeout.A">A</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Create a Future that success after a duration
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a Future that success after a duration
+</p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>Type of the message</p></dd><dt class="param">message</dt><dd class="cmt"><p>the message wrapped by the future after success</p></dd><dt class="param">duration</dt><dd class="cmt"><p>the duration after which Future is a success</p></dd><dt class="param">scheduler</dt><dd class="cmt"><p>the Scheduler to manager duration</p></dd><dt class="param">ec</dt><dd class="cmt"><p>the Execution Context for Future execution</p></dd><dt>returns</dt><dd class="cmt"><p>the Future created
+</p></dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>

@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A bunch of implicit Json readers and writers to deal with json docs as string and
+json docs as JsValue or JsObject. Very useful to deal with 'raw' types</p><p>Example :</p><pre><span class="kw">import</span> org.reactivecouchbase.CouchbaseRWImplicits._</pre></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -194,7 +195,8 @@
         <span class="name">documentAsJsObjectReader</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Reads JsValue as JsObject
+</p>
     </li><li name="org.reactivecouchbase.CouchbaseRWImplicits#documentAsJsValuetReader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="documentAsJsValuetReader:play.api.libs.json.Reads[play.api.libs.json.JsValue]"></a>
       <a id="documentAsJsValuetReader:Reads[JsValue]"></a>
@@ -207,7 +209,8 @@
         <span class="name">documentAsJsValuetReader</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Reads JsValue as JsValue
+</p>
     </li><li name="org.reactivecouchbase.CouchbaseRWImplicits#documentAsStringReader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="documentAsStringReader:play.api.libs.json.Reads[String]"></a>
       <a id="documentAsStringReader:Reads[String]"></a>
@@ -220,7 +223,8 @@
         <span class="name">documentAsStringReader</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Reads JsValue as a String
+</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -317,7 +321,8 @@
         <span class="name">jsObjectToDocumentWriter</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="play.api.libs.json.JsObject">JsObject</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Writes JsValue as JsObject
+</p>
     </li><li name="org.reactivecouchbase.CouchbaseRWImplicits#jsValueToDocumentWriter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jsValueToDocumentWriter:play.api.libs.json.Writes[play.api.libs.json.JsValue]"></a>
       <a id="jsValueToDocumentWriter:Writes[JsValue]"></a>
@@ -330,7 +335,8 @@
         <span class="name">jsValueToDocumentWriter</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="play.api.libs.json.JsValue">JsValue</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Writes JsValue as JsValue
+</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -382,7 +388,8 @@
         <span class="name">stringToDocumentWriter</span><span class="result">: <span class="extype" name="play.api.libs.json.Writes">Writes</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Writes JsValue as String
+</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>

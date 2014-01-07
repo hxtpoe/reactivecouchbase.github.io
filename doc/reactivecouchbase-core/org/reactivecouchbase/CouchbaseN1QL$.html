@@ -39,7 +39,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The N1QL public API for users
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
@@ -150,32 +151,49 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.reactivecouchbase.CouchbaseN1QL#N1QL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="N1QL(query:String)(implicitdriver:org.reactivecouchbase.ReactiveCouchbaseDriver):org.reactivecouchbase.N1QLQuery"></a>
-      <a id="N1QL(String)(ReactiveCouchbaseDriver):N1QLQuery"></a>
+    </li><li name="org.reactivecouchbase.CouchbaseN1QL#N1QL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="N1QL(query:String)(implicitbucket:org.reactivecouchbase.CouchbaseBucket):org.reactivecouchbase.N1QLQuery"></a>
+      <a id="N1QL(String)(CouchbaseBucket):N1QLQuery"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">N1QL</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="driver">driver: <a href="ReactiveCouchbaseDriver.html" class="extype" name="org.reactivecouchbase.ReactiveCouchbaseDriver">ReactiveCouchbaseDriver</a></span>)</span><span class="result">: <a href="N1QLQuery.html" class="extype" name="org.reactivecouchbase.N1QLQuery">N1QLQuery</a></span>
+        <span class="name">N1QL</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="bucket">bucket: <a href="CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>)</span><span class="result">: <a href="N1QLQuery.html" class="extype" name="org.reactivecouchbase.N1QLQuery">N1QLQuery</a></span>
       </span>
       </h4>
-      
-    </li><li name="org.reactivecouchbase.CouchbaseN1QL#N1QL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="N1QL(query:String,host:String,port:String):org.reactivecouchbase.N1QLQuery"></a>
-      <a id="N1QL(String,String,String):N1QLQuery"></a>
+      <p class="shortcomment cmt">Creates a N1QL query</p><div class="fullcomment"><div class="comment cmt"><p>Creates a N1QL query</p><p>Example :</p><pre><span class="kw">import</span> scala.concurrent.ExecutionContext.Implicits.global
+
+<span class="kw">case</span> <span class="kw">class</span> Person(name: <span class="std">String</span>, age: <span class="std">Int</span>)
+
+<span class="kw">val</span> driver = ReactiveCouchbaseDriver()
+<span class="kw">implicit</span> <span class="kw">val</span> bucket = driver.bucket(<span class="lit">"default"</span>)
+<span class="kw">implicit</span> <span class="kw">val</span> fmt = Json.format[Person]
+
+<span class="kw">val</span> age = <span class="num">42</span>
+
+N1QL( s<span class="lit">""</span><span class="lit">" SELECT fname, age FROM tutorial WHERE age > ${age} "</span><span class="lit">""</span>, driver )
+                                             .toList[Person].map { persons <span class="kw">=&gt;</span>
+  println(s<span class="lit">"Persons older than ${age}"</span>, persons))
+}</pre></div><dl class="paramcmts block"><dt class="param">query</dt><dd class="cmt"><p>the actual N1QL query written in N1QL query language</p></dd><dt class="param">bucket</dt><dd class="cmt"><p>the targeted bucket</p></dd><dt>returns</dt><dd class="cmt"><p>the created N1QLQuery instance
+</p></dd></dl></div>
+    </li><li name="org.reactivecouchbase.CouchbaseN1QL#N1QL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="N1QL(bucket:org.reactivecouchbase.CouchbaseBucket,query:String,host:String,port:String):org.reactivecouchbase.N1QLQuery"></a>
+      <a id="N1QL(CouchbaseBucket,String,String,String):N1QLQuery"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">N1QL</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="host">host: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="port">port: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="N1QLQuery.html" class="extype" name="org.reactivecouchbase.N1QLQuery">N1QLQuery</a></span>
+        <span class="name">N1QL</span><span class="params">(<span name="bucket">bucket: <a href="CouchbaseBucket.html" class="extype" name="org.reactivecouchbase.CouchbaseBucket">CouchbaseBucket</a></span>, <span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="host">host: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="port">port: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="N1QLQuery.html" class="extype" name="org.reactivecouchbase.N1QLQuery">N1QLQuery</a></span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">Creates a N1QL query
+</p><div class="fullcomment"><div class="comment cmt"><p>Creates a N1QL query
+</p></div><dl class="paramcmts block"><dt class="param">bucket</dt><dd class="cmt"><p>the targeted bucket</p></dd><dt class="param">query</dt><dd class="cmt"><p>the actual N1QL query written in N1QL query language</p></dd><dt class="param">host</dt><dd class="cmt"><p>the host of the N1QL server</p></dd><dt class="param">port</dt><dd class="cmt"><p>the port of the N1QL server</p></dd><dt>returns</dt><dd class="cmt"><p>the created N1QLQuery instance
+</p></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
