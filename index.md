@@ -266,19 +266,24 @@ ReactiveCouchbase is composed of 3 Projects
 
 The core of ReactiveCouchbase. Depends on Play Iteratees library, Play JSON library and Akka
 
-<a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-core">GitHub</a>, <a href="doc/reactivecouchbase-core">ScalaDoc</a>
+* <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-core">GitHub</a>
+* <a href="doc/reactivecouchbase-core">ScalaDoc</a>
 
 ### ReactiveCouchbase Event Store
 
 A simple Event Store for eventsourcing application using Couchbase as event log
 
-<a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-es">GitHub</a>, <a href="doc/reactivecouchbase-es">ScalaDoc</a>
+* <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-es">GitHub</a>
+* <a href="doc/reactivecouchbase-es">ScalaDoc</a>
 
 ### ReactiveCouchbase Play 2 plugin
 
-You can absolutely use ReactiveCouchbase from a Play 2 application. For more information about it, go to the <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/blob/master/README.md">ReactiveCouchbase-play's GitHub project</a>
+You can absolutely use ReactiveCouchbase from a Play 2 application. 
+The Play plugin for ReactiveCouchbase include some nice features to boost your productivity and let you focus on app writing. 
+For more information about it, go to the <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/blob/master/README.md">ReactiveCouchbase-play's GitHub project</a>
 
-<a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play">GitHub</a>, <a href="doc/reactivecouchbase-play">ScalaDoc</a>
+* <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play">GitHub</a>
+* <a href="doc/reactivecouchbase-play">ScalaDoc</a>
 
 Community
 ======================
