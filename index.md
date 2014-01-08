@@ -111,14 +111,14 @@ object Application extends App {
     "surname" -> "Doe",
     "age" -> 42,
     "address" -> Json.obj(
-      "number" -> "221b"
-      "street" -> "Baker Street"
+      "number" -> "221b",
+      "street" -> "Baker Street",
       "city" -> "London"
     )
   )
   
   // persist the JSON doc with the key 'john-doe', using implicit 'jsObjectToDocumentWriter' for serialization
-  bucket.set("john-doe", document).onSuccess {
+  bucket.set[JsObject]("john-doe", document).onSuccess {
     case status => println(s"Operation status : ${status.getMessage}")
   }
 
@@ -137,8 +137,8 @@ import org.reactivecouchbase.ReactiveCouchbaseDriver
 import scala.concurrent.Future
 import play.api.libs.json._
 
-class Address(number: String, street: String, city: String)
-class Person(name: String, surname: String, age: Int, address: Address)
+case class Address(number: String, street: String, city: String)
+case class Person(name: String, surname: String, age: Int, address: Address)
 
 object Application extends App {
 
@@ -155,7 +155,7 @@ object Application extends App {
   val document = Person("John", "Doe", 42, Address("221b", "Baker Street", "London"))
 
   // persist the Person instance with the key 'john-doe', using implicit 'personFmt' for serialization
-  bucket.set("john-doe", document).onSuccess {
+  bucket.set[Person]("john-doe", document).onSuccess {
     case status => println(s"Operation status : ${status.getMessage}")
   }
 
@@ -174,8 +174,8 @@ import org.reactivecouchbase.ReactiveCouchbaseDriver
 import scala.concurrent.Future
 import play.api.libs.json._
 
-class Address(number: String, street: String, city: String)
-class Person(name: String, surname: String, age: Int, address: Address)
+case class Address(number: String, street: String, city: String)
+case class Person(name: String, surname: String, age: Int, address: Address)
 
 object Application extends App {
 
@@ -189,7 +189,7 @@ object Application extends App {
   implicit val personFmt = Json.format[Person]
 
   // get the Person instance with the key 'john-doe', using implicit 'personFmt' for deserialization
-  bucket.get("john-doe").map { opt =>
+  bucket.get[Person]("john-doe").map { opt =>
     println(opt.map(person => s"Found John : ${person}").getOrElse("Cannot find object with key 'john-doe'"))
   }
 
