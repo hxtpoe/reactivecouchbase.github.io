@@ -60,7 +60,7 @@ object Application extends App {
  
   // do something here with the default bucket  
 
-  // shutdown the driver  
+  // shutdown the driver (only at app shutdown)
   driver.shutdown()
 }
 ```
@@ -122,7 +122,7 @@ object Application extends App {
     case status => println(s"Operation status : ${status.getMessage}")
   }
 
-  // shutdown the driver  
+  // shutdown the driver (only at app shutdown)
   driver.shutdown()
 }
 ```
@@ -159,7 +159,7 @@ object Application extends App {
     case status => println(s"Operation status : ${status.getMessage}")
   }
 
-  // shutdown the driver  
+  // shutdown the driver (only at app shutdown)
   driver.shutdown()
 }
 
@@ -193,7 +193,7 @@ object Application extends App {
     println(opt.map(person => s"Found John : ${person}").getOrElse("Cannot find object with key 'john-doe'"))
   }
 
-  // shutdown the driver  
+  // shutdown the driver (only at app shutdown)
   driver.shutdown()
 }
 ``` 
@@ -239,7 +239,7 @@ object Application extends App {
       println(s"One more beer for the road : ${Json.prettyPrint(doc)}")
     }
   }
-  // shutdown the driver  
+  // shutdown the driver (only at app shutdown)
   driver.shutdown()
 }
 ```
@@ -279,7 +279,17 @@ A simple Event Store for eventsourcing application using Couchbase as event log
 ### ReactiveCouchbase Play 2 plugin
 
 You can absolutely use ReactiveCouchbase from a Play 2 application. 
-The Play plugin for ReactiveCouchbase include some nice features to boost your productivity and let you focus on app writing. 
+The Play plugin for ReactiveCouchbase include some nice features to boost your productivity and let you focus on app writing :
+
+* Integration with the native Json API of the framework
+* Integration with the native stream API of the framework
+* Driver and connection handled automaticallu by the plugin
+* Automatic CRUD HTTP services
+* Integration with Java
+* Couchbase as cache module
+* Design document synchronisation at startup
+* Data synchronisation at startup
+
 For more information about it, go to the <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/blob/master/README.md">ReactiveCouchbase-play's GitHub project</a>
 
 * <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play">GitHub</a>
