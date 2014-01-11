@@ -300,7 +300,7 @@ Community
 ======================
 
 * ReactiveCouchbase organisation on <a href="https://github.com/ReactiveCouchbase">GitHub</a>
-* Tickets are on <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-core/issues">GitHub</a> (<a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/issues">1</a>, <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-es/issues">2</a>). Feel free to report any bug you find or to make pull requests.
+* Tickets are on <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-core/issues">GitHub</a> (<a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-core/issues">1</a>, <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-play/issues">2</a>, <a href="https://github.com/ReactiveCouchbase/ReactiveCouchbase-es/issues">3</a>). Feel free to report any bug you find or to make pull requests.
 * ReactiveCouchbase on <a href="https://groups.google.com/forum/?hl=fr#!forum/reactivecouchbase">Google Groups</a>
 
                 
