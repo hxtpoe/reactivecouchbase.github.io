@@ -43,7 +43,7 @@ or if you feel adventurous, you can use snapshots
 resolvers += "ReactiveCouchbase Snapshots" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots/"
  
 libraryDependencies ++= Seq(
-  "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.2-SNAPSHOT"
+  "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.2"
 )
 ```
                  
