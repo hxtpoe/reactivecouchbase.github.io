@@ -33,7 +33,7 @@ ReactiveCouchbase is available on a private Maven repository. If you use SBT, yo
 resolvers += "ReactiveCouchbase Releases" at "https://raw.github.com/ReactiveCouchbase/repository/master/releases/"
  
 libraryDependencies ++= Seq(
-  "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.2"
+  "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.3"
 )
 ```
 
@@ -43,7 +43,7 @@ or if you feel adventurous, you can use snapshots
 resolvers += "ReactiveCouchbase Snapshots" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots/"
  
 libraryDependencies ++= Seq(
-  "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.3"
+  "org.reactivecouchbase" %% "reactivecouchbase-core" % "0.4-SNAPSHOT"
 )
 ```
                  

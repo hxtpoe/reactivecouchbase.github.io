@@ -27,7 +27,7 @@ ReactiveCouchbase is available on a private Maven repository. If you use SBT, yo
 resolvers += "ReactiveCouchbase Snapshots" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots/"
  
 libraryDependencies ++= Seq(
-  "org.reactivecouchbase" %% "java-wrapper" % "0.3"
+  "org.reactivecouchbase" %% "java-wrapper" % "0.4-SNAPSHOT"
 )
 ```
 
@@ -38,7 +38,7 @@ with maven
 <dependency>
   <groupId>org.reactivecouchbase</groupId>
   <artifactId>java-wrapper</artifactId>
-  <version>0.3</version>
+  <version>0.4-SNAPSHOT</version>
 </dependency>
 
 <repositories>
